@@ -10,18 +10,28 @@
   text-decoration: none;
 }
 
-p {
-  font: 1.5vw 'Roboto', san-serif;
-  line-height: 1.5;
-}
-/* get rid of font sizes for other p's? */
-
 h2 {
   font: 7vw 'Sue Ellen Francisco', cursive;
 }
 
 h3 {
   font: 5vw 'Sue Ellen Francisco', cursive;
+}
+
+p {
+  font: 1.5vw 'Roboto', san-serif;
+  line-height: 1.75;
+}
+/* get rid of font sizes for other p's? */
+
+a {
+  font: 2.5vw 'Sue Ellen Francisco', cursive;
+  text-decoration: none;
+  color: black;
+}
+
+.wave-divider {
+  width: 100%;
 }
 
 /* NAVIGATION SECTION */
@@ -31,19 +41,55 @@ nav {
 }
 
 .nav-container {
-  height: 12vh;
+  height: 14vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 4rem;
+  margin: 0 6vw;
 }
 
 nav .fas {
   font-size: 40px;
 }
 
+.nav-links {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.fa-bars {
+  display: none;
+}
+
+/* HEADER SECTION */
+
+header {
+  background-color: #F1ECE3;
+  padding: 7rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header button {
+  width: 20vw;
+  font-size: 2vw; 
+  font-weight: bold;
+  color: #F1ECE3;
+  padding: 1.5rem;
+  border: none;
+  background-color: #5B6E7E;
+}
+
+header .fas {
+  font-size: 2vw;
+  padding-left: 1rem;
+  color: #F1ECE3;
+}
+
 video {
-  width: 100%;
+  width: 65%;
 }
 
 /* ABOUT SECTION */
@@ -53,7 +99,7 @@ video {
 }
 
 .about-container {
-  padding: 5rem 0;
+  padding: 0 0 7rem 0;
   display: flex;
   align-items: baseline;
   width: 60%;
@@ -68,6 +114,14 @@ video {
   vertical-align: top;
   margin-block-start: 0;
   margin-block-start: 0; */
+}
+
+.about-container a {
+  font-size: 1.5vw;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: baseline;
+  color: #E5E5E5;
+  text-decoration: underline;
 }
 
 .about-container p {
@@ -132,32 +186,34 @@ video {
   color: #E5E5E5;
 }
 
-.tech-used-container p {
-  font-size: 2rem;
-}
+
 
 .tech-used-container a {
   vertical-align: baseline;
-  font-size: 2rem;
   color: black;
 }
 
 /* CREDITS SECTION */
 
 #credits {
-  background-color: #E5E5E5;
+  background-color: #F1ECE3;
+}
+
+#credits h3 {
+  text-align: center;
+  padding-top: 7rem;
 }
 
 .about-me {
   display: flex;
   align-items: center;
-  padding: 7rem 0;
+  
   width: 70%;
   margin: 0 auto;
 }
 
 .about-me img {
-  width: 30%;
+  width: 35%;
   border-radius: 50%;
   border: 5px solid #B1B959;
 }
@@ -191,7 +247,8 @@ video {
 
 footer {
   background-color: #E3A761;
-  padding: 5rem;
+  /* padding: 5rem; */
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,5 +260,5 @@ footer .fab {
 }
 
 footer p {
-  font: 3rem 'Sue Ellen Francisco', cursive;
+  font: 2.5vw 'Sue Ellen Francisco', cursive;
 }
