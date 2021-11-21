@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font: 10px 'Roboto', san-serif;
+  vertical-align: bottom;
+}
+
+.fas, .fab {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  font: 1.5vw 'Roboto', san-serif;
+  line-height: 1.5;
+}
+/* get rid of font sizes for other p's? */
+
+h2 {
+  font: 7vw 'Sue Ellen Francisco', cursive;
+}
+
+h3 {
+  font: 5vw 'Sue Ellen Francisco', cursive;
+}
+
+/* NAVIGATION SECTION */
+
+nav {
+  background-color: #E3A761;
+}
+
+.nav-container {
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4rem;
+}
+
+nav .fas {
+  font-size: 40px;
+}
+
+video {
+  width: 100%;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  background: #5B6E7E;
+}
+
+.about-container {
+  padding: 5rem 0;
+  display: flex;
+  align-items: baseline;
+  width: 60%;
+  margin: 0 auto;
+  color: #E5E5E5;
+}
+
+.about-container h2 {
+  vertical-align: baseline;
+  display: inline-block;
+  /* height: 60px;
+  vertical-align: top;
+  margin-block-start: 0;
+  margin-block-start: 0; */
+}
+
+.about-container p {
+  margin: 3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-container p:first-child {
+  margin-top: 0;
+}
+
+/* QUOTE SECTION */
+
+.quotes {
+  background-image: url("images/winter-landscape.jpeg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding: 12rem 0;
+}
+
+.quotes figure {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10rem 6rem;
+  text-align: center;
+  background-color: #E5E5E5;
+  opacity: 70%;
+  border: 5px solid #C87179;
+}
+
+.quotes blockquote p{
+  font-size: 6vw;
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+.quotes figcaption {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+/* TECH USED SECTION */
+
+#tech-used {
+  background-color: #E3A761;
+  padding: 7rem 0;
+}
+
+.tech-used-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tech-icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 3rem;
+}
+
+.tech-icon-container .fab {
+  font-size: 8vw;
+  margin: 5rem 0;
+  color: #E5E5E5;
+}
+
+.tech-used-container p {
+  font-size: 2rem;
+}
+
+.tech-used-container a {
+  vertical-align: baseline;
+  font-size: 2rem;
+  color: black;
+}
+
+/* CREDITS SECTION */
+
+#credits {
+  background-color: #E5E5E5;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  padding: 7rem 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-me img {
+  width: 30%;
+  border-radius: 50%;
+  border: 5px solid #B1B959;
+}
+
+.about-me-text {
+  margin: 0 2rem;
+}
+
+.thanks {
+  margin: 0 auto;
+  padding-bottom: 7rem;
+  text-align: center;
+  width: 70%;
+}
+
+.thanks-heading {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.thanks-heading h3 {
+  padding-bottom: 2rem;
+}
+
+.thanks-heading img {
+  width: 30%;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background-color: #E3A761;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .fab {
+  font-size: 7rem;
+  margin: 3rem;
+}
+
+footer p {
+  font: 3rem 'Sue Ellen Francisco', cursive;
+}
