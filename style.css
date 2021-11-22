@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-container {
-  height: 11rem;
+  height: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +70,7 @@ nav .fas {
 /* HEADER SECTION */
 
 header {
-  margin-top: 11rem;
+  margin-top: 10rem;
   background-color: #F1ECE3;
   padding: 7rem 0;
   display: flex;
@@ -89,6 +89,7 @@ header a {
   padding: 1.5rem;
   border: none;
   background-color: #5B6E7E;
+  margin: 5rem 0 0 0;
 }
 
 header .fas {
@@ -100,6 +101,7 @@ header .fas {
 
 video {
   width: 65%;
+  border: 8px solid #C87179;
 }
 
 /* ABOUT SECTION */
@@ -160,29 +162,36 @@ video {
   text-align: center;
   background-color: #E5E5E5;
   opacity: 70%;
-  border: 5px solid #C87179;
+  border: 8px solid #C87179;
 }
 
 .quotes blockquote p{
-  font-size: 6vw;
+  font-size: 5vw;
   font-family: 'Sue Ellen Francisco', cursive;
 }
 
 .quotes figcaption {
   padding-top: 2rem;
-  font-size: 2rem;
+  font-size: 2vw;
+  font-style: italic;
 }
 
 /* TECH USED SECTION */
 
 #tech-used {
-  background-color: #E3A761;
-  padding: 7rem 0;
+  background-color: #5B6E7E;
+  /* padding: 7rem 0; */
+  color: #E5E5E5;
+}
+
+.tech-used-container h3 {
+  padding-top: 6rem;
 }
 
 .tech-used-container {
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 5rem;
 }
 
 .tech-icon-container {
@@ -199,8 +208,12 @@ video {
 
 .tech-used-container a {
   vertical-align: baseline;
-  color: black;
+  color: #E5E5E5;
   text-decoration: underline;
+}
+
+.wave-divider-middle {
+  transform: scaleY(-1);
 }
 
 /* CREDITS SECTION */
@@ -217,7 +230,6 @@ video {
 .about-me {
   display: flex;
   align-items: center;
-  
   width: 70%;
   margin: 0 auto;
 }
@@ -230,7 +242,7 @@ video {
 }
 
 .about-me-text {
-  margin: 0 2rem;
+  margin: 0 4rem;
 }
 
 .thanks {
@@ -301,31 +313,125 @@ footer p {
     margin: 1rem 0 3rem 0;
   }
 
-  .about-me p {
+  .about-me-text {
     text-align: center;
+    margin: 0;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 750px) {
+
+  h2 {
+    font-size: 7rem;
+  }
+
+  h3 {
+    font-size: 5.5rem;
+  }
+
+  a {
+    font-size: 10rem;
+  }
+
+  .hide {
+    display: none;
+  }
+
   .fa-bars {
     display: block;
     cursor: pointer;
   }
 
+  .nav-container {
+    height: 8rem;
+  }
+
+  nav .fas {
+    font-size: 4rem;
+  }
+
   .nav-links {
-    display: none;
     flex-direction: column;
     align-items: center;
     background-color: #E3A761;
     min-width: 100%;
     position: absolute;
-    top: 11rem;
+    top: 8rem;
     left: 0;
     border-top: 1px solid black;
     padding: 1rem 0;
+    /* transform: translateY(0%);
+    transition: all 1s ease-out; */
   }
 
-  .toggleHide {
-    display: display;
+  header {
+    margin-top: 6rem;
+    flex-direction: column;
   }
+
+  video {
+    width: 85%;
+  }
+
+  header a {
+    width: 250px;
+    font-size: 2rem;
+  }
+
+  header .fas {
+    font-size: 2rem;
+  }
+  
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-container h2 {
+    text-align: center;
+  }
+
+  .quotes figure {
+    width: 75%;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #E5E5E5;
+    opacity: 70%;
+    border: 8px solid #C87179;
+  }
+
+  .quotes blockquote p{
+    font-size: 5rem;
+    font-family: 'Sue Ellen Francisco', cursive;
+  }
+
+  .quotes figcaption {
+    font-size: 2.5rem;
+  }
+
+  .tech-used-container p {
+    padding: 0 2rem;
+  }
+
+  .tech-used-container a {
+    font-size: 2rem;
+  }
+
+  .thanks-heading {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thanks-heading h3 {
+    padding-bottom: 0;
+  }
+
+  .thanks-heading img {
+    width: 70%;
+    padding-bottom: 3rem;
+  }
+
+
 }
