@@ -10,6 +10,10 @@ document.body.addEventListener('click', function(e) {
   } 
 })
 
+document.addEventListener('scroll', function() {
+  dropdown.classList.add('hide');
+})
+
 window.addEventListener('load', function() {
   dropdown.classList.add('hide');
 })

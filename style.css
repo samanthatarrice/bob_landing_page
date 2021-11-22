@@ -50,7 +50,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 6vw;
+  margin: 0 5vw;
 }
 
 nav .fas {
@@ -220,6 +220,7 @@ video {
 
 #credits {
   background-color: #F1ECE3;
+  margin-top: -1px;
 }
 
 #credits h3 {
@@ -238,7 +239,7 @@ video {
   min-width: 35%;
   max-width: 50%;
   border-radius: 50%;
-  border: 5px solid #B1B959;
+  border: 8px solid #B1B959;
 }
 
 .about-me-text {
@@ -286,6 +287,35 @@ footer p {
   font: 2.5vw 'Sue Ellen Francisco', cursive;
 }
 
+/* HOW-TO PAGE */
+
+.how-to-header {
+  align-items: start;
+}
+
+.video-and-button {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-to-video {
+  width: 80%;
+}
+
+.instructions {
+  margin-right: 10rem;
+  width: 50%;
+  
+}
+
+.instructions li {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+
 @media screen and (max-width: 1200px) {
   p {
     font-size: 2rem;
@@ -305,6 +335,10 @@ footer p {
 }
 
 @media screen and (max-width: 992px) {
+  .nav-container a {
+    font-size: 4vw;
+  }
+  
   .about-me {
     flex-direction: column;
   }
@@ -317,6 +351,20 @@ footer p {
     text-align: center;
     margin: 0;
     width: 100%;
+  }
+
+  .how-to-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-and-button {
+    width: 90%;
+  }
+
+  .instructions {
+    margin: 5rem 0;
+    width: 90%;
   }
 }
 
