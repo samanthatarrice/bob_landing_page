@@ -38,10 +38,15 @@ a {
 
 nav {
   background-color: #E3A761;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  box-shadow: 3px 3px 7px rgba(79, 79, 80, 0.5);
 }
 
 .nav-container {
-  height: 14vh;
+  height: 11rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,12 +54,12 @@ nav {
 }
 
 nav .fas {
-  font-size: 40px;
+  font-size: 5rem;
 }
 
 .nav-links {
   display: flex;
-  width: 40%;
+  min-width: 40%;
   justify-content: space-between;
 }
 
@@ -65,6 +70,7 @@ nav .fas {
 /* HEADER SECTION */
 
 header {
+  margin-top: 11rem;
   background-color: #F1ECE3;
   padding: 7rem 0;
   display: flex;
@@ -72,7 +78,10 @@ header {
   align-items: center;
 }
 
-header button {
+header a {
+  display: block;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
   width: 20vw;
   font-size: 2vw; 
   font-weight: bold;
@@ -83,9 +92,10 @@ header button {
 }
 
 header .fas {
-  font-size: 2vw;
-  padding-left: 1rem;
+  font-size: 2.5vw;
+  padding-left: 2rem;
   color: #F1ECE3;
+  vertical-align: baseline;
 }
 
 video {
@@ -103,6 +113,7 @@ video {
   display: flex;
   align-items: baseline;
   width: 60%;
+  min-width: 75%;
   margin: 0 auto;
   color: #E5E5E5;
 }
@@ -186,11 +197,10 @@ video {
   color: #E5E5E5;
 }
 
-
-
 .tech-used-container a {
   vertical-align: baseline;
   color: black;
+  text-decoration: underline;
 }
 
 /* CREDITS SECTION */
@@ -213,7 +223,8 @@ video {
 }
 
 .about-me img {
-  width: 35%;
+  min-width: 35%;
+  max-width: 50%;
   border-radius: 50%;
   border: 5px solid #B1B959;
 }
@@ -261,4 +272,60 @@ footer .fab {
 
 footer p {
   font: 2.5vw 'Sue Ellen Francisco', cursive;
+}
+
+@media screen and (max-width: 1200px) {
+  p {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    width: 50%;
+  }
+
+  .nav-links a {
+    font-size: 3rem;
+  }
+
+  .about-container a {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-me img {
+    margin: 1rem 0 3rem 0;
+  }
+
+  .about-me p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .fa-bars {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E3A761;
+    min-width: 100%;
+    position: absolute;
+    top: 11rem;
+    left: 0;
+    border-top: 1px solid black;
+    padding: 1rem 0;
+  }
+
+  .toggleHide {
+    display: display;
+  }
 }
