@@ -5,24 +5,23 @@
   vertical-align: bottom;
 }
 
+body {
+  background-color: #F1ECE3;
+}
+
 .fas, .fab {
   color: black;
   text-decoration: none;
 }
 
-h2 {
+h2, h3 {
   font: 7vw 'Sue Ellen Francisco', cursive;
 }
 
-h3 {
-  font: 5vw 'Sue Ellen Francisco', cursive;
-}
-
 p {
-  font: 1.5vw 'Roboto', san-serif;
+  font: 1.75vw 'Roboto', san-serif;
   line-height: 1.75;
 }
-/* get rid of font sizes for other p's? */
 
 a {
   font: 2.5vw 'Sue Ellen Francisco', cursive;
@@ -33,6 +32,7 @@ a {
 .wave-divider {
   width: 100%;
 }
+
 
 /* NAVIGATION SECTION */
 
@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-container {
-  height: 10rem;
+  height: 9rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,11 +67,11 @@ nav .fas {
   display: none;
 }
 
+
 /* HEADER SECTION */
 
 header {
-  margin-top: 10rem;
-  background-color: #F1ECE3;
+  margin-top: 9rem;
   padding: 7rem 0;
   display: flex;
   justify-content: space-evenly;
@@ -89,7 +89,7 @@ header a {
   padding: 1.5rem;
   border: none;
   background-color: #5B6E7E;
-  margin: 5rem 0 0 0;
+  margin: auto 0;
 }
 
 header .fas {
@@ -104,6 +104,7 @@ video {
   border: 8px solid #C87179;
 }
 
+
 /* ABOUT SECTION */
 
 #about {
@@ -111,22 +112,12 @@ video {
 }
 
 .about-container {
-  padding: 0 0 7rem 0;
+  padding-bottom: 7rem;
   display: flex;
   align-items: baseline;
   width: 60%;
-  min-width: 75%;
   margin: 0 auto;
   color: #E5E5E5;
-}
-
-.about-container h2 {
-  vertical-align: baseline;
-  display: inline-block;
-  /* height: 60px;
-  vertical-align: top;
-  margin-block-start: 0;
-  margin-block-start: 0; */
 }
 
 .about-container a {
@@ -138,13 +129,14 @@ video {
 }
 
 .about-container p {
-  margin: 3rem;
+  margin-left: 3rem;
   font-family: 'Roboto', sans-serif;
 }
 
-.about-container p:first-child {
-  margin-top: 0;
+.about-container p:first-child, p:nth-child(2n) {
+  padding-bottom: 3rem;
 }
+
 
 /* QUOTE SECTION */
 
@@ -160,7 +152,7 @@ video {
   margin: 0 auto;
   padding: 10rem 6rem;
   text-align: center;
-  background-color: #E5E5E5;
+  background-color: #F1ECE3;
   opacity: 70%;
   border: 8px solid #C87179;
 }
@@ -176,12 +168,12 @@ video {
   font-style: italic;
 }
 
+
 /* TECH USED SECTION */
 
 #tech-used {
   background-color: #5B6E7E;
-  /* padding: 7rem 0; */
-  color: #E5E5E5;
+  color: #F1ECE3;
 }
 
 .tech-used-container h3 {
@@ -216,12 +208,13 @@ video {
   transform: scaleY(-1);
 }
 
+
 /* CREDITS SECTION */
 
 #credits {
-  background-color: #F1ECE3;
-  margin-top: -1px;
+  margin: -1px 0;
 }
+/*Attempt to cover slight line between wavy dividers and top and bottom sections */
 
 #credits h3 {
   text-align: center;
@@ -230,7 +223,7 @@ video {
 
 .about-me {
   display: flex;
-  align-items: center;
+  align-items: start;
   width: 70%;
   margin: 0 auto;
 }
@@ -267,11 +260,11 @@ video {
   width: 30%;
 }
 
+
 /* FOOTER SECTION */
 
 footer {
   background-color: #E3A761;
-  /* padding: 5rem; */
   padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
@@ -287,6 +280,7 @@ footer p {
   font: 2.5vw 'Sue Ellen Francisco', cursive;
 }
 
+
 /* HOW-TO PAGE */
 
 .how-to-header {
@@ -300,6 +294,10 @@ footer p {
   align-items: center;
 }
 
+.how-to-button {
+  margin-top: 5rem;
+}
+
 .how-to-video {
   width: 80%;
 }
@@ -307,7 +305,6 @@ footer p {
 .instructions {
   margin-right: 10rem;
   width: 50%;
-  
 }
 
 .instructions li {
@@ -317,6 +314,7 @@ footer p {
 
 
 @media screen and (max-width: 1200px) {
+
   p {
     font-size: 2rem;
   }
@@ -332,6 +330,7 @@ footer p {
   .about-container a {
     font-size: 2rem;
   }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -341,6 +340,7 @@ footer p {
   
   .about-me {
     flex-direction: column;
+    align-items: center;
   }
 
   .about-me img {
@@ -366,6 +366,7 @@ footer p {
     margin: 5rem 0;
     width: 90%;
   }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -409,8 +410,6 @@ footer p {
     left: 0;
     border-top: 1px solid black;
     padding: 1rem 0;
-    /* transform: translateY(0%);
-    transition: all 1s ease-out; */
   }
 
   header {
@@ -425,6 +424,7 @@ footer p {
   header a {
     width: 250px;
     font-size: 2rem;
+    margin-top: 5rem;
   }
 
   header .fas {
@@ -434,6 +434,7 @@ footer p {
   .about-container {
     flex-direction: column;
     align-items: center;
+    width: 80%;
   }
 
   .about-container h2 {
@@ -480,6 +481,5 @@ footer p {
     width: 70%;
     padding-bottom: 3rem;
   }
-
 
 }
