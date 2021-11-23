@@ -445,10 +445,6 @@ footer p {
     width: 75%;
     margin: 0 auto;
     padding: 4rem 2rem;
-    text-align: center;
-    background-color: #E5E5E5;
-    opacity: 70%;
-    border: 8px solid #C87179;
   }
 
   .quotes blockquote p{
