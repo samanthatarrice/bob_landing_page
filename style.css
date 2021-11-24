@@ -319,6 +319,10 @@ footer p {
   line-height: 1.5;
 }
 
+.bullets {
+  list-style: none;
+}
+
 
 @media screen and (max-width: 1200px) {
 
