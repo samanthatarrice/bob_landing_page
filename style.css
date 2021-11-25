@@ -213,20 +213,20 @@ video {
 }
 
 .wave-divider-middle {
-  transform: scaleY(-1);
+  transform: scaleY(-1) translate(0, -1px);
 }
 
 
 /* CREDITS SECTION */
 
 #credits {
-  margin: -1px 0;
+  position: relative;
 }
-/*Attempt to cover slight line between wavy dividers and top and bottom sections */
 
 #credits h3 {
   text-align: center;
   padding-top: 7rem;
+  background-color: #f4f2ef;
 }
 
 .about-me {
@@ -286,7 +286,6 @@ footer .fab {
 footer p {
   font: 2.5vw 'Sue Ellen Francisco', cursive;
 }
-
 
 /* HOW-TO PAGE */
 
