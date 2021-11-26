@@ -13,11 +13,6 @@ document.body.addEventListener('click', function(e) {
   } 
 })
 
-document.addEventListener('scroll', function() {
-  dropdown.classList.add('hide');
-  header.classList.remove('header-big-margin');
-})
-
 window.addEventListener('load', function() {
   dropdown.classList.add('hide');
   header.classList.remove('header-big-margin');
