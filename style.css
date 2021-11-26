@@ -397,6 +397,10 @@ footer p {
     display: none;
   }
 
+  .header-big-margin {
+    margin-top: 28rem;
+  }
+
   .fa-bars {
     display: block;
     cursor: pointer;
@@ -420,6 +424,10 @@ footer p {
     left: 0;
     border-top: 1px solid black;
     padding: 1rem 0;
+  }
+
+  .nav-container a {
+    font-size: 3.5rem;
   }
 
   header {
