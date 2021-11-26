@@ -91,7 +91,6 @@ header a {
   color: #f4f2ef;
   padding: 1.5rem;
   border: none;
-  /* background-color: #5B6E7E; */
   background-color: #7b95a9;
   margin: auto 0;
 }
@@ -101,6 +100,10 @@ header .fas {
   padding-left: 2rem;
   color: #f4f2ef;
   vertical-align: baseline;
+}
+
+header a:hover {
+  background-color: #9cbed8;
 }
 
 video {
